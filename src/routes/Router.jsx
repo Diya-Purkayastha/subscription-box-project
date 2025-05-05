@@ -5,6 +5,9 @@ import mainLayout from '../layout/mainLayout';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
+import ServiceDetails from '../pages/ServiceDetails';
+import Loading from '../components/Loading';
+import PrivateRoute from '../provider/PrivateRoute';
 
  export const Router = createBrowserRouter([
     {
@@ -13,7 +16,7 @@ import Register from '../pages/Register';
         children:[{
             index:true,
             path:'/',
-            Component:Home
+            Component:Home,
         },
         {
             path:'/login',
@@ -22,6 +25,13 @@ import Register from '../pages/Register';
         {
             path:'/register',
             element: <Register></Register>
+        },
+        {
+            path:'/service/:id',
+            element:(<PrivateRoute>
+                <ServiceDetails></ServiceDetails></PrivateRoute>),
+            loader: ()=> fetch('data.json'),
+            hydrateFallbackElement: <Loading></Loading>
         },
     ]
     },

@@ -1,0 +1,135 @@
+[
+    {
+      "id": 1,
+      "name": "Amazon Alexa Smart Box",
+      "thumbnail": "https://example.com/images/alexa-smart-box-thumbnail.jpg",
+      "banner": "https://example.com/images/alexa-smart-box-banner.jpg",
+      "frequency": "Yearly",
+      "price": 149.99,
+      "description": "Enhance your home with Alexa-compatible devices including smart lights, plugs, and home hubs.",
+      "tech_category": "Smart Home",
+      "features": [
+        "Alexa-compatible Devices",
+        "Smart Lighting Solutions",
+        "Voice-Controlled Plugs"
+      ],
+      "subscription_benefits": [
+        "Free Amazon Music Unlimited for 3 Months",
+        "Early Access to Alexa Features",
+        "Discount on Echo Devices"
+      ],
+      "ratings": 4.7,
+      "number_of_reviews": 540
+    },
+    {
+      "id": 2,
+      "name": "Apple Fitness+ Essentials Box",
+      "thumbnail": "https://example.com/images/apple-fitness-box-thumbnail.jpg",
+      "banner": "https://example.com/images/apple-fitness-box-banner.jpg",
+      "frequency": "Monthly",
+      "price": 39.99,
+      "description": "Stay fit with accessories and content that sync perfectly with your Apple Watch and Fitness+.",
+      "tech_category": "Fitness",
+      "features": [
+        "Workout Bands & Straps",
+        "Device Cleaning Kits",
+        "Fitness+ Trial Codes"
+      ],
+      "subscription_benefits": [
+        "3-Month Fitness+ Membership",
+        "Access to Apple Health Challenges",
+        "Discount on Apple Watch Accessories"
+      ],
+      "ratings": 4.6,
+      "number_of_reviews": 387
+    },
+    {
+      "id": 3,
+      "name": "Netflix Fan Gear Box",
+      "thumbnail": "https://example.com/images/netflix-box-thumbnail.jpg",
+      "banner": "https://example.com/images/netflix-box-banner.jpg",
+      "frequency": "Quarterly",
+      "price": 59.99,
+      "description": "Official merchandise from Netflix Originals like Stranger Things, The Witcher, and more.",
+      "tech_category": "Entertainment",
+      "features": [
+        "Limited-Edition Collectibles",
+        "Branded Clothing",
+        "Behind-the-Scenes Content"
+      ],
+      "subscription_benefits": [
+        "Netflix Gift Cards",
+        "First Look at Upcoming Shows",
+        "Exclusive Collector’s Items"
+      ],
+      "ratings": 4.8,
+      "number_of_reviews": 612
+    },
+    {
+      "id": 4,
+      "name": "Spotify Premium Music Kit",
+      "thumbnail": "https://example.com/images/spotify-box-thumbnail.jpg",
+      "banner": "https://example.com/images/spotify-box-banner.jpg",
+      "frequency": "Monthly",
+      "price": 29.99,
+      "description": "Get premium audio gear and accessories to level up your Spotify listening experience.",
+      "tech_category": "Music",
+      "features": [
+        "Bluetooth Earbuds",
+        "Phone Stands",
+        "Spotify Playlist Cards"
+      ],
+      "subscription_benefits": [
+        "Spotify Premium Free for 2 Months",
+        "Early Access to Spotify Features",
+        "Music Discovery Tools"
+      ],
+      "ratings": 4.5,
+      "number_of_reviews": 298
+    },
+    {
+      "id": 5,
+      "name": "Google Nest Starter Pack",
+      "thumbnail": "https://example.com/images/google-nest-box-thumbnail.jpg",
+      "banner": "https://example.com/images/google-nest-box-banner.jpg",
+      "frequency": "Yearly",
+      "price": 179.99,
+      "description": "Build your smart home with Google Nest devices for security, automation, and comfort.",
+      "tech_category": "Smart Home",
+      "features": [
+        "Nest Mini Speaker",
+        "Smart Thermostat Coupons",
+        "Door Sensor Samples"
+      ],
+      "subscription_benefits": [
+        "Discount on Nest Devices",
+        "Free Google One Trial",
+        "Priority Nest Tech Support"
+      ],
+      "ratings": 4.6,
+      "number_of_reviews": 412
+    },
+    {
+      "id": 6,
+      "name": "Meta Quest VR Experience Box",
+      "thumbnail": "https://example.com/images/meta-vr-box-thumbnail.jpg",
+      "banner": "https://example.com/images/meta-vr-box-banner.jpg",
+      "frequency": "Quarterly",
+      "price": 129.99,
+      "description": "Expand your VR library and gear with accessories and games curated for Meta Quest users.",
+      "tech_category": "AR/VR",
+      "features": [
+        "VR Game Codes",
+        "Lens Protectors",
+        "Comfort Head Straps"
+      ],
+      "subscription_benefits": [
+        "Access to Meta Events",
+        "Beta Testing Invitations",
+        "App Store Gift Cards"
+      ],
+      "ratings": 4.7,
+      "number_of_reviews": 369
+    }
+  ]
+  
