@@ -18,7 +18,7 @@ const Login = () => {
             .then((result) => {
                 // Signed in 
                 setUser(result.user)
-                alert('successfully logged in')
+               toast('successfully logged in')
                 navigate(`${location.state ? location.state : '/'}`);
             })
             .catch((error) => {

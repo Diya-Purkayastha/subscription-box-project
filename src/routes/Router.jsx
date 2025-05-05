@@ -8,6 +8,7 @@ import Register from '../pages/Register';
 import ServiceDetails from '../pages/ServiceDetails';
 import Loading from '../components/Loading';
 import PrivateRoute from '../provider/PrivateRoute';
+import ErrorPage from '../pages/ErrorPage';
 
  export const Router = createBrowserRouter([
     {
@@ -38,7 +39,7 @@ import PrivateRoute from '../provider/PrivateRoute';
    
     {
         path: '/*',
-        element:<h2>error 404</h2>
+        element:<ErrorPage></ErrorPage>
     }
  ])
 
