@@ -9,6 +9,7 @@ import ServiceDetails from '../pages/ServiceDetails';
 import Loading from '../components/Loading';
 import PrivateRoute from '../provider/PrivateRoute';
 import ErrorPage from '../pages/ErrorPage';
+import MyProfile from '../pages/MyProfile';
 
  export const Router = createBrowserRouter([
     {
@@ -34,6 +35,12 @@ import ErrorPage from '../pages/ErrorPage';
             loader: ()=> fetch('data.json'),
             hydrateFallbackElement: <Loading></Loading>
         },
+        {
+            path:'/myprofile',
+            element:(<PrivateRoute>
+                <MyProfile></MyProfile>
+            </PrivateRoute>)
+        }
     ]
     },
    
