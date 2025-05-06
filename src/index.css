@@ -7,8 +7,9 @@
   name: "light";
   default: true;
 
-  --color-primary: blue;
-  --color-secondary: teal;
+  --color-primary: #4E1F00;
+  --color-secondary: #FEBA17;
+ 
 }
 
 *{
@@ -17,4 +18,9 @@
 
 a.active{
   text-decoration: underline;
+}
+button{
+  color: white;
+  font-size: 18px;
+  padding:  20px ;
 }

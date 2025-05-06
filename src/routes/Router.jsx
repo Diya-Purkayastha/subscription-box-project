@@ -32,7 +32,7 @@ import MyProfile from '../pages/MyProfile';
             path:'/service/:id',
             element:(<PrivateRoute>
                 <ServiceDetails></ServiceDetails></PrivateRoute>),
-            loader: ()=> fetch('data.json'),
+            loader: ()=> fetch('/data.json'),
             hydrateFallbackElement: <Loading></Loading>
         },
         {

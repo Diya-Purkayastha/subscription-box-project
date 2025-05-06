@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from '../components/Slider';
 import Service from '../components/Service';
+import Benefits from '../components/Benefits';
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
            
            <Slider></Slider> 
            <Service></Service>
+           <Benefits></Benefits>
    
         </div>
     );
