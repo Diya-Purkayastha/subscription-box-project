@@ -5,8 +5,10 @@ import { toast } from 'react-toastify';
 import { FaEyeSlash } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { BsGoogle } from 'react-icons/bs';
+import useTitle from '../hook/useTitle';
 
 const Login = () => {
+    useTitle('Login')
     const { login, setUser, googleSignIn, forgetPassword } = use(AuthContext)
     const location = useLocation();
     const navigate = useNavigate();

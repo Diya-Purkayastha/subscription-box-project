@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import useTitle from '../hook/useTitle';
 const BlogDetails = () => {
+    useTitle('Blog')
     const data = useLoaderData();
     const { id } = useParams();
 

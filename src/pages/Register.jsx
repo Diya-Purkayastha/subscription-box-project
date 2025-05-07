@@ -4,8 +4,10 @@ import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../provider/AuthProvider';
 import { toast } from 'react-toastify';
 import { BsGoogle } from 'react-icons/bs';
+import useTitle from '../hook/useTitle';
 
 const Register = () => {
+    useTitle("Register")
     const { createUser, setUser, updateUser, googleSignIn } = use(AuthContext)
     // const [passError, setPassError] = useState(" ")
     const navigate = useNavigate()
