@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import useTitle from '../hook/useTitle';
+import ServiceReview from '../components/ServiceReview';
 
 const ServiceDetails = () => {
     useTitle("Services")
@@ -51,29 +52,7 @@ const ServiceDetails = () => {
 
                 </div>
             </div>
-
-
-
-            {/* review */}
-            <div className='my-5'>
-                <div className="card bg-base-100 w-full shrink-0 shadow-2xl  py-5">
-                    <form  className="card-body text-center">
-                        <h1 className="text-3xl font-semibold text-center">Login your account</h1>
-                        <fieldset className="fieldset text-center">
-                            {/* email */}
-                            <label className="label">Email</label>
-                            <input type="email" className="input" placeholder="Email" name='email' required  />
-                            {/* password */}
-                            <label className="label">Password</label>
-                            
-                            <input type="email" className="input" placeholder="Email" name='email' required  />
-
-                            <button type='submit' className="btn btn-neutral mt-4">Login</button>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-
+            <ServiceReview></ServiceReview>
         </div>
 
     );
