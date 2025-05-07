@@ -4,6 +4,7 @@ import { AuthContext } from '../provider/AuthProvider';
 import { toast } from 'react-toastify';
 import { FaEyeSlash } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
+import { BsGoogle } from 'react-icons/bs';
 
 const Login = () => {
     const { login, setUser, googleSignIn, forgetPassword } = use(AuthContext)
@@ -71,27 +72,27 @@ const Login = () => {
                         {/* password */}
                         <label className="label">Password</label>
                        <div className='relative'>
-                       <input type={showPassword ? 'text' : 'password'}  className="input" placeholder="Password" name='password' required />
+                       <input type={showPassword ? 'text' : 'password'}  className="input py-5" placeholder="Password" name='password' required />
                         <button
                             //toggle eye icon
                             type='button'
                             onClick={() => setShowPassword(!showPassword)}
-                            className='btn btn-xs absolute p-2 rounded-full top-2 right-6 z-10'>
+                            className='btn btn-xs absolute p-0 rounded-full top-0 right-6 z-10 bg-white shadow-none'>
 
                             {
-                                showPassword ? <FaEyeSlash /> : <FaEye />
+                                showPassword ? <FaEyeSlash size={18} color='black'/> : <FaEye size={18} color='black'/>
                             }
                         </button>
                        </div>
                         <div ><a onClick={handleForgetPass} className="link link-hover">Forgot password?</a></div>
 
                         <button type='submit' className="btn btn-neutral mt-4">Login</button>
-                        <button onClick={handleGoogle} className="btn bg-white text-black border-[#e5e5e5]">
-                            <svg aria-label="Google logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g><path d="m0 0H512V512H0" fill="#fff"></path><path fill="#34a853" d="M153 292c30 82 118 95 171 60h62v48A192 192 0 0190 341"></path><path fill="#4285f4" d="m386 400a140 175 0 0053-179H260v74h102q-7 37-38 57"></path><path fill="#fbbc02" d="m90 341a208 200 0 010-171l63 49q-12 37 0 73"></path><path fill="#ea4335" d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55"></path></g></svg>
-                            Login with Google
+                        <button onClick={handleGoogle} className="btn btn-secondary ">
+                           <BsGoogle></BsGoogle> Login with Google
                         </button>
+                     
                     </fieldset>
-                    <p className='text-accent text-center font-semibold mt-5'>Don't Have An Account ? <Link to='/register' className='text-secondary underline'>Register</Link> </p>
+                    <p className='text-black text-center font-semibold mt-5'>Don't Have An Account ? <Link to='/register' className='text-secondary underline'>Register</Link> </p>
                 </form>
             </div>
         </div>

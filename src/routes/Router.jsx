@@ -10,6 +10,7 @@ import Loading from '../components/Loading';
 import PrivateRoute from '../provider/PrivateRoute';
 import ErrorPage from '../pages/ErrorPage';
 import MyProfile from '../pages/MyProfile';
+import BlogDetails from '../pages/BlogDetails';
 
  export const Router = createBrowserRouter([
     {
@@ -40,6 +41,14 @@ import MyProfile from '../pages/MyProfile';
             element:(<PrivateRoute>
                 <MyProfile></MyProfile>
             </PrivateRoute>)
+        },
+        {
+            path:'/blog/:id',
+            element:(<PrivateRoute>
+                <BlogDetails></BlogDetails>
+            </PrivateRoute>),
+            loader: ()=> fetch('/blog.json'),
+            hydrateFallbackElement: <Loading></Loading>
         }
     ]
     },

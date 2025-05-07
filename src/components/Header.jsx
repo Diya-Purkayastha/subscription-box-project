@@ -19,8 +19,9 @@ const Header = () => {
     }
 
     return (
-        <div className='flex justify-between items-center p-2'>
-            <div className="text-3xl text-primary font-medium"><h1>SubS.<span className='text-secondary'>boX</span></h1></div>
+        <div className='bg-primary'>
+         <div className='flex justify-between items-center p-2 w-11/12 mx-auto text-white'>
+         <div className="text-3xl text-white font-medium"><h1>SubS.<span className='text-secondary'>boX</span></h1></div>
             <div className="nav flex gap-5 text-lg font-medium">
                 <NavLink to='/'> Home</NavLink>
                 <NavLink to='/about'>About</NavLink>
@@ -31,10 +32,11 @@ const Header = () => {
             <div className="login-btn flex gap-5">
                 <img className='w-12 rounded-full cursor-pointer' src={`${user ? user.photoURL : userimg}`} alt="user" title= {user ? user.displayName : 'guest'} />
                 {
-                    user ? <button onClick={handleLogout} className='btn btn-primary text-white'>Log Out</button> :  <Link to='login' className='btn btn-primary px-10 text-white'  >Login</Link>
+                    user ? <button onClick={handleLogout} className='btn btn-secondary text-primary'>Log Out</button> :  <Link to='login' className='btn btn-secondary px-10 text-primary'  >Login</Link>
                 }
                
             </div>
+         </div>
         </div>
     );
 };
