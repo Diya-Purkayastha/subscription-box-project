@@ -9,7 +9,7 @@ import useTitle from '../hook/useTitle';
 
 const Login = () => {
     useTitle('Login')
-    const { login, setUser, googleSignIn, forgetPassword } = use(AuthContext)
+    const { login, setUser, googleSignIn } = use(AuthContext)
     const location = useLocation();
     const navigate = useNavigate();
     const [errorMessage, setErrorMessage] = useState(null)
@@ -44,14 +44,12 @@ const Login = () => {
 
     const handleGoogle = e => {
         e.preventDefault();
-        googleSignIn();
-    }
-
-    const handleForgetPass = () => {
-        const email = email2.current.value; 
-        forgetPassword(email)
-        .then(()=>{
-            toast.info("Check your email now")
+        googleSignIn()
+        .then((result) => {
+            // Signed in 
+            setUser(result.user)
+            toast.success('successfully logged in')
+            navigate(`${location.state ? location.state : '/'}`);
         })
         .catch((error) => {
             const errorMessag = error.code;
@@ -59,7 +57,16 @@ const Login = () => {
             toast.error(errorMessage);
             
         });
+    }
 
+    const handleForgetPass = () => {
+        const email = email2.current.value; 
+         if (!email) {
+                    toast.warning("Please enter your email.");
+                    return;
+                }
+        navigate('/forgetpass', { state: email });
+       
     }
 
     return (

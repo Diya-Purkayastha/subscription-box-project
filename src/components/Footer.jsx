@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Footer = () => {
     return (
@@ -21,8 +22,14 @@ const Footer = () => {
                     Providing reliable tech since 1992
                 </div>
                 <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+               <div className='flex flex-col md:flex-row gap-4'>
+               <Link to='/privacypolicy' className="hover:underline">Terms & Conditions</Link>
+               <Link to='/privacypolicy' className="hover:underline">Privacy Policy</Link>
+               </div>
+               
             </aside>
-            <nav>
+           
+            <nav className='m-0 p-0'>
                 <div className="grid grid-flow-col gap-4">
                     <a href='https://x.com/login?'>
                         <svg

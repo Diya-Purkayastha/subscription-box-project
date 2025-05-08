@@ -11,6 +11,8 @@ import PrivateRoute from '../provider/PrivateRoute';
 import ErrorPage from '../pages/ErrorPage';
 import MyProfile from '../pages/MyProfile';
 import BlogDetails from '../pages/BlogDetails';
+import PrivacyPolicy from '../pages/PrivacyPolicy';
+import ForgetPass from '../pages/ForgetPass';
 
  export const Router = createBrowserRouter([
     {
@@ -49,6 +51,14 @@ import BlogDetails from '../pages/BlogDetails';
             </PrivateRoute>),
             loader: ()=> fetch('/blog.json'),
             hydrateFallbackElement: <Loading></Loading>
+        },
+        {
+            path: '/privacypolicy',
+            Component: PrivacyPolicy
+        },
+        {
+            path:'/forgetpass',
+            Component: ForgetPass
         }
     ]
     },
