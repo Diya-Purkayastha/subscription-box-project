@@ -13,6 +13,7 @@ import MyProfile from '../pages/MyProfile';
 import BlogDetails from '../pages/BlogDetails';
 import PrivacyPolicy from '../pages/PrivacyPolicy';
 import ForgetPass from '../pages/ForgetPass';
+import Blog from '../components/Blog';
 
  export const Router = createBrowserRouter([
     {
@@ -59,6 +60,12 @@ import ForgetPass from '../pages/ForgetPass';
         {
             path:'/forgetpass',
             Component: ForgetPass
+        },
+        {
+            path:'/blog',
+            element:(<PrivateRoute>
+                <Blog></Blog>
+            </PrivateRoute>)
         }
     ]
     },

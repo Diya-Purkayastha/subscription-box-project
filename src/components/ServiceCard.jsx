@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const ServiceCard = ({ singledata }) => {
   
     return (
-        <div>
+        <div data-aos = "fade-up">
             <div className="card bg-base-100  shadow-sm space-y-2">
                 <figure className='p-3 border border-primary'>
                     <img className='w-full h-[250px] object-cover'

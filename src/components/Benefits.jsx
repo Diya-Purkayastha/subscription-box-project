@@ -12,7 +12,7 @@ const benefitsList = [
 
 const Benefits = () => {
   return (
-    <section className="min-h-screen px-4 py-12 lg:py-24 bg-base-100">
+    <section className="min-h-screen px-4 py-12 lg:py-24 bg-base-100" data-aos = "fade-up" >
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
     
         <div className="w-full">

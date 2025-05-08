@@ -30,11 +30,12 @@ const Header = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 shadow">
                             <NavLink to='/'> Home</NavLink>
-                            <NavLink to='/register'>Register</NavLink>
-                            <NavLink to='/login'>Login</NavLink>
-                            {
-                                user && <NavLink to='/myprofile'>My Profile</NavLink>
-                            }
+                           
+                            <NavLink to='/blog'>Blog</NavLink>
+                            
+                            
+                                <NavLink to='/myprofile'>My Profile</NavLink>
+                            
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-xl"><div className="md:text-3xl text-white font-medium"><h1>SubS.<span className='text-secondary'>boX</span></h1></div></a>
@@ -42,11 +43,11 @@ const Header = () => {
                 <div className="navbar-center text-white  hidden lg:flex ">
                     <ul className="menu menu-horizontal flex gap-4 text-[16px] px-1">
                         <NavLink to='/'> Home</NavLink>
-                        <NavLink to='/register'>Register</NavLink>
-                        <NavLink to='/login'>Login</NavLink>
-                        {
-                            user && <NavLink to='/myprofile'>My Profile</NavLink>
-                        }
+                        
+                        <NavLink to='/blog'>Blog</NavLink>
+                        
+                          <NavLink to='/myprofile'>My Profile</NavLink>
+                        
                     </ul>
                 </div>
                 <div className="navbar-end">

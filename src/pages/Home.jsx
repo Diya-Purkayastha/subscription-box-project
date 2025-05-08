@@ -4,6 +4,7 @@ import Service from '../components/Service';
 import Benefits from '../components/Benefits';
 import Blog from '../components/Blog';
 import useTitle from '../hook/useTitle';
+import Testimonial from '../components/Testimonial';
 
 const Home = () => {
     useTitle('Home');
@@ -13,7 +14,7 @@ const Home = () => {
            <Slider></Slider> 
            <Service></Service>
            <Benefits></Benefits>
-           <Blog></Blog>
+          <Testimonial></Testimonial>
    
         </div>
     );
