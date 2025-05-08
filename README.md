@@ -1,12 +1,66 @@
-# React + Vite
+# 📦 SubS.boX – Subscription Box Service Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SubS.boX is a responsive and feature-rich web application that allows users to subscribe to curated subscription boxes, leave reviews, and manage their profiles. Built with React and Firebase, the platform focuses on a seamless user experience, clean design, and scalable architecture.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+🚀 [Click here to view the deployed site on Netlify](https://subsbox-site.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎯 Project Goals
+
+- Create a real-world web platform with a modern UI/UX.
+- Practice React fundamentals including components, hooks, and routing.
+- Implement authentication using Firebase.
+- Learn and apply responsive design using Tailwind CSS and DaisyUI.
+- Use third-party tools and libraries such as Swiper for interactivity.
+
+---
+
+## ✨ Features
+
+- ✅ **User Authentication** (Login / Register using Firebase)
+- 👤 **User Profile Page** with editable profile data
+- 📝 **Add Reviews** with a 1–5 rating and custom comments
+- 🎥 **Swiper Slider** for visual engagement
+- 🧭 **Client-side Routing** using React Router
+- 🔒 **Protected Routes** for authenticated users only
+- 🌈 **Dynamic Page Titles** for better SEO and UX
+- 🌍 **Mobile-First & Responsive Design**
+- 🦶 **Footer** with social media links, Terms & Conditions, Privacy Policy
+- ❌ **Custom 404 Not Found Page**
+- ☁️ **Hosted on Netlify**
+
+---
+
+## 🛠️ Technologies Used
+
+| Tech          | Description |
+|---------------|-------------|
+| **React**     | JavaScript library for building UI |
+| **React Router** | Routing and navigation |
+| **Tailwind CSS** | Utility-first CSS framework |
+| **DaisyUI**   | Tailwind-based UI component library |
+| **Firebase**  | Authentication and user management |
+| **Swiper.js** | Responsive image carousel library |
+| **React Icons** | Icon support for UI enhancements |
+| **Netlify**   | Hosting and deployment platform |
+
+---
+
+## 🧾 Pages Overview
+
+- `/` – Home with hero section and slider
+- `/login` – User login form
+- `/register` – User signup form
+- `/profile` – Authenticated profile details with update form
+- `/review` – Submit review and rating, see all reviews
+- `*` – 404 Not Found page
+
+---
+
+
+
