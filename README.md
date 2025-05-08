@@ -47,6 +47,7 @@ SubS.boX is a responsive and feature-rich web application that allows users to s
 | **Firebase**  | Authentication and user management |
 | **Swiper.js** | Responsive image carousel library |
 | **React Icons** | Icon support for UI enhancements |
+| **AOS Animation**   | Animation platform |
 | **Netlify**   | Hosting and deployment platform |
 
 ---
