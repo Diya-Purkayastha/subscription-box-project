@@ -76,7 +76,7 @@ To run this project locally, follow these steps:
 
    ```bash
    git clone https://github.com/Diya-Purkayastha/subscription-box-project.git
-   cd lawyer-appointment-app
+   cd subscription-box-project
    ```
 
 2. **Install Dependencies:**
