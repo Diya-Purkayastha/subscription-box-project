@@ -68,5 +68,41 @@ SubS.boX is a responsive and feature-rich web application that allows users to s
 
 ---
 
+## 💻 Local Setup Instructions
+
+To run this project locally, follow these steps:
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/Diya-Purkayastha/subscription-box-project.git
+   cd lawyer-appointment-app
+   ```
+
+2. **Install Dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the Development Server:**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Visit the App:**
+   Open your browser and go to `http://localhost:5173`
+
+---
+
+## 🙌 Thank You for Visiting the Project!
+
+I hope you enjoyed exploring this project. If you found it useful or inspiring, feel free to give it a ⭐ on GitHub. Your feedback is always welcome!
+
+---
+
+Happy Coding 🚀
+
 
 
